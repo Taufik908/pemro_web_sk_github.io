@@ -1,0 +1,71 @@
+/* Reset margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: #0066cc;
+}
+header p {
+    font-style: italic;
+}
+
+/* Profil Section */
+.profil {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #0066cc;
+}
+.biodata h2 {
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+/* Tentang & Keahlian */
+section {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+h3 {
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
