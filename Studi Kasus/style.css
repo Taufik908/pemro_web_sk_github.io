@@ -1,71 +1,161 @@
-/* Reset margin & padding */
+:root {
+  --gradient-start: #0066cc;
+  --gradient-end:   #0099ff;
+  --bg-light:       #f4f7fa;
+  --white:          #ffffff;
+  --text:           #333333;
+  --radius:         10px;
+  --shadow:         rgba(0, 0, 0, 0.1);
+  --transition:     0.3s ease;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 20px;
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px var(--shadow);
+  z-index: 100;
 }
-header h1 {
-    color: #0066cc;
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition);
 }
-header p {
-    font-style: italic;
-}
-
-/* Profil Section */
-.profil {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-.foto {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    border: 3px solid #0066cc;
-}
-.biodata h2 {
-    margin-bottom: 10px;
-    color: #0066cc;
+.nav a:hover {
+  color: var(--gradient-end);
 }
 
-/* Tentang & Keahlian */
-section {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--white);
 }
-h3 {
-    margin-bottom: 10px;
-    color: #0066cc;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+.hero p {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Main Grid */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Card Base */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px var(--shadow);
+  overflow: visible;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+.card h2,
+.card h3 {
+  color: var(--gradient-start);
+  margin-bottom: 0.75rem;
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--gradient-start);
+}
+
+.profile-card .card-body {
+  flex: 1;          
+  min-width: 0;     
+  overflow-wrap: break-word;  
+}
+
+.profile-card .card-body p {
+  margin: 0.5rem 0;
+}
+
+
+/* About & Skills & Contact */
+.about-card,
+.skills-card,
+.contact-card {
+  padding: 1.5rem;
+}
+.skills-card ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+.contact-card {
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: var(--gradient-start);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background var(--transition);
+}
+.btn:hover {
+  background: var(--gradient-end);
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #777;
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #777;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
 }
