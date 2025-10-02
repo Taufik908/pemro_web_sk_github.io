@@ -1,2 +1,2 @@
-Taufiq Kurrahman
-2411102441168
+Nama: Taufiq Kurrahman
+NIM: 2411102441168
