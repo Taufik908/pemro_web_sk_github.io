@@ -1,4 +1,3 @@
-```markdown
 # README.md
 
 # Profil Instagram Clone dengan Bootstrap
