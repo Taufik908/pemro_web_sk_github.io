@@ -131,4 +131,4 @@ Anda dapat mengustomisasi dengan:
 - Mengubah warna dan styling di bagian CSS
 - Menambah fitur dengan JavaScript tambahan
 - Mengintegrasikan dengan backend untuk data dinamis
-```
+
