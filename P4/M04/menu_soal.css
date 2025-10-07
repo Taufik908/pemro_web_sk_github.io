@@ -1,0 +1,47 @@
+/* Untuk menyembunyikan ul li (submenu) */
+#menu li ul {
+    display: none;
+}
+
+/* style awal sebelum cursor mouse di arahkan (menu utama) */
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #8D77AB;
+    padding: 5px 15px 5px 15px;
+    background: #E1EACD;
+    /* margin-left: 1px; */
+    white-space: nowrap;
+}
+
+/* style setelah cursor diarahkan */
+#menu ul li a:hover {
+    background: #BAD8B6;
+}
+
+/* untuk memunculkan submenu jika pada sebuah menu utama ada tag li ul
+(maksudnya ada tag ul ada dalam tag li) */
+#menu li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+/* meratakan sub menu kanan kiri dan menghilangkan fungsi float left
+(mengembalikan ke default) */
+#menu li:hover li {
+    float: none;
+    font-size: 11px;
+}
+
+/* style awal sebelum cursor diarahkan (submenu) */
+#menu li:hover a {
+    background: #E1EACD;
+}
+
+/* style setelah cursor diarahkan (submenu) */
+#menu li:hover li a:hover {
+    background: #BAD866; }
+
+body {
+    background-color: #F9F6E6;
+}
