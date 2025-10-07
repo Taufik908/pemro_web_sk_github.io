@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Profil Biodata</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .photo-section {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f9fa;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-container {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #4a6491;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info-section {
+            flex: 2;
+            min-width: 300px;
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #4a6491;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #4a6491;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #4a6491;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #4a6491;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #2c3e50;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Me</h1>
+            <p>Profil Biodata Pribadi</p>
+        </div>
+        
+        <div class="content">
+            <div class="photo-section">
+                <div class="photo-container">
+                    <!-- Ganti dengan foto Anda -->
+                    <img src="foto-profil.jpg" alt="Foto Profil" onerror="this.src='https://via.placeholder.com/250x250/4a6491/ffffff?text=FOTO+PROFIL'">
+                </div>
+                <h2>Taufiq Kurrahman</h2>
+                <p>S1 Teknik Informatika</p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">📧</a>
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">🔗</a>
+                    <a href="#" class="social-link">📘</a>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="section">
+                    <h2>Informasi Pribadi</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Nama Lengkap:</span>
+                            <p>Taufiq Kurrahman</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">NIM:</span>
+                            <p>2411102441168</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tempat, Tanggal Lahir:</span>
+                            <p>Muara Ancalong, 19-09-2006</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Jenis Kelamin:</span>
+                            <p>Laki-laki</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Program Studi:</span>
+                            <p>S1 Teknik Informatika</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Fakultas:</span>
+                            <p>Sains dan Teknologi</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Universitas:</span>
+                            <p>Universitas Muhammadiyah Kalimantan Timur</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <p>2411102441168@umkt.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Tentang Saya</h2>
+                    <p>Saya adalah mahasiswa Program Studi S1 Teknik Informatika di UMKT. Saya memiliki minat yang besar dalam bidang teknologi informasi dan pengembangan web. Saat ini, saya sedang mempelajari berbagai bahasa pemrograman dan framework untuk meningkatkan keterampilan dalam pengembangan aplikasi web.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>Keterampilan</h2>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Pendidikan</h2>
+                    <div class="info-item">
+                        <span class="info-label">2024 - Sekarang:</span>
+                        <p>Universitas Muhammadiyah Kalimantan Timur - S1 Teknik Informatika</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">2022 - 2024:</span>
+                        <p>SMAN1 - IPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
