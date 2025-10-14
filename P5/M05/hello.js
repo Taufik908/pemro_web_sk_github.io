@@ -1,1 +1,3 @@
-document.writeln('Hello');
+function hello() {
+    alert ("Halo dunia")
+}
