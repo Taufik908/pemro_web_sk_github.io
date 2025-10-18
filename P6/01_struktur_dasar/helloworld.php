@@ -7,4 +7,5 @@ echo $teks;
 echo "<br />" . $sebuah_bilangan;
 echo "<br />Isi dari variabel \$bilanganYangLain : " . $bilanganYangLain;
 echo "<br />Isi dari variabel \$teks2 adalah : " . $teks2;
+
 ?>
