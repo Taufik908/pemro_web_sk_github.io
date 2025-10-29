@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- kolom kiri -->
+        <div class="kolom-kiri">
+            <div class="container">
+                <h1>Input Data</h1>
+                <hr>
+                <p>NAMA</p>
+                <input type="text" id="nama" placeholder="Nama Lengkap">
+                <P>NIM</P>
+                <input type="text" id="nim" placeholder="20210001">
+                <p>SEMESTER</p>
+                <input type="text" id="semester" placeholder="1-8">
+                <P>PROGRAM STUDI</P>
+                <select id="prodi">
+                    <option value="">-- Pilih --</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="Hukum">Hukum</option>
+                    <option value="TS">Teknik Sipil</option>
+                </select>
+                <p>EMAIL</p>
+                <input type="email" id="email" placeholder="email@example.com">
+
+                <button onclick="tambahMahasiswa()">KIRIM DATA</button>
+
+                <div class="kotak-petunjuk">
+                    <span class="ikon">💡</span>
+                    <span class="teks">Isi data mahasiswa dengan benar</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- kolom kanan -->
+        <div class="kolom-kanan">
+            <div class="info">
+                <h2>Informasi Pengiriman</h2>
+                <hr><br>
+                <div class="info-2">
+                <h4>Apa yang terjadi saat Anda klik "Kirim Data"?</h4>
+                <p>✔Data ditampilkan di Console</p>
+                <p>✔Data disimpan di array</p>
+                <p>✔Jumlah data di-update: <span id="jumlah">0</span></p>
+                <p>✔Form akan kosong kembali</p>
+                </div>
+            </div>
+
+        <div class="tabel-mahasiswa">
+            <h2>Table Mahasiswa</h2>
+            <br>
+            <hr>
+            <br>
+            <table id="tabel">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>NAMA</th>
+                        <th>INFO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- JS  -->
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
