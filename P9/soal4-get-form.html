@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Mahasiswa Baru (GET)</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Mahasiswa Baru (Method GET)</h1>
+    <form method="get" action="soal4-get-proses.php">
+        <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+        </table>
+        <input type="submit" name="submit" value="Daftar (GET)">
+        <input type="reset" name="reset" value="Reset">
+    </form>
+    
+    <p><strong>Perhatikan:</strong> Data akan terlihat di URL browser ketika menggunakan method GET</p>
+    <a href="soal3-form.html">Coba dengan method POST</a>
+</body>
+</html>
